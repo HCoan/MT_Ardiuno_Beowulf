@@ -1,2 +1,32 @@
-Placeholder
-Branch Edit
+//Servos Code
+# include <Servo.h>
+
+Servo myservo;
+
+int pos = 0;
+
+void setup() {
+  myservo.attach(9);
+  myservo.write(100);
+}
+
+void loop() {
+}
+
+
+
+//Light Code (Separate into two different files for Arduinos)
+const int ledPin = 13;
+const int ledPin2 = 12;
+
+
+
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);
+  digitalWrite(ledPin2, HIGH);
+}
